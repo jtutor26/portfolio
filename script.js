@@ -216,3 +216,14 @@ if (backToTopButton) {
         window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
     });
 }
+
+// Show More: each project column only shows its first 3 cards until toggled.
+document.querySelectorAll('[data-show-more]').forEach((button) => {
+    const column = button.closest('.project-column');
+    if (!column) return;
+
+    button.addEventListener('click', () => {
+        const expanded = column.classList.toggle('expanded');
+        button.textContent = expanded ? 'Show Less' : 'Show More';
+    });
+});

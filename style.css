@@ -456,6 +456,19 @@ h2 {
     gap: 2rem;
 }
 
+/* Show only the first 3 project cards per column until "Show More" is
+   clicked. Columns with 3 or fewer cards never get a button (see JS). */
+.project-column:not(.expanded) .project-grid > .project-card:nth-child(n+4) {
+    display: none;
+}
+
+.show-more-btn {
+    display: block;
+    margin: 1.5rem auto 0;
+    font-family: inherit;
+    cursor: pointer;
+}
+
 .project-card {
     background: var(--card-bg);
     border-radius: 8px;
@@ -765,6 +778,15 @@ h2 {
     font-size: 0.9rem;
     color: var(--muted-text);
     margin-top: 10px;
+}
+
+.certifications-note a {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+.certifications-note a:hover {
+    color: var(--accent-color);
 }
 
 /* Footer */
