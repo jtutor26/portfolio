@@ -3,21 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of JT Tutor, a full stack developer and Base Camp Coding Academy graduate specializing in Python, JavaScript, React, and Django.">
+    <meta name="author" content="JT Tutor">
     <title>JT Tutor Portfolio</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JT Tutor Portfolio">
+    <meta property="og:description" content="Portfolio of JT Tutor, a full stack developer and Base Camp Coding Academy graduate specializing in Python, JavaScript, React, and Django.">
+    <meta property="og:url" content="https://jttutor.dev/">
+    <meta property="og:image" content="https://jttutor.dev/headshot.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JT Tutor Portfolio">
+    <meta name="twitter:description" content="Portfolio of JT Tutor, a full stack developer and Base Camp Coding Academy graduate specializing in Python, JavaScript, React, and Django.">
+    <meta name="twitter:image" content="https://jttutor.dev/headshot.jpeg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23001f3f'/%3E%3Ctext x='32' y='42' font-family='Segoe UI, sans-serif' font-size='28' font-weight='bold' fill='%23ead285' text-anchor='middle'%3EJT%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">JT Tutor</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
+    <a href="#about" class="skip-link">Skip to main content</a>
+
+    <nav aria-label="Primary">
+        <div class="nav-bar">
+            <div class="logo">JT Tutor</div>
+
+            <button id="nav-menu-toggle" class="nav-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                JT Tutor
+                <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+            </button>
+
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#experience-education" data-sections="experience education">Experience &amp; Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                    <span aria-hidden="true">&#127769;</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
+            <div class="mobile-menu-inner">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
         </div>
     </nav>
+
+    <main>
 
     <section id="about">
         <div class="about-container">
@@ -26,90 +66,97 @@
             <div class="about-text">
                 <h2 id="greeting">Hello!</h2> 
                 <p>
-                    Full stack developer and recent graduate of Base Camp Coding Academy, where I completed an intensive year-long program covering nine languages and frameworks on a full scholarship. Currently gaining hands-on experience through dual internships — developing Salesforce/Apex solutions at C Spire and contributing as a software engineer at EdgeTheory — while completing an Associate's Degree in Coding Technology at Northwest Mississippi Community College. I'm looking to grow with a company where I can keep building real-world skills and make a genuine impact.
+                    Full stack developer and graduate of Base Camp Coding Academy, where I completed an intensive year-long program covering nine languages and frameworks on a full scholarship. I previously gained hands-on experience developing Salesforce/Apex solutions during an internship at C Spire, and I'm currently working as a Software Engineer Intern at EdgeTheory, contributing to a variety of projects. I'm also finishing up my Associate's Degree in Coding Technology at Northwest Mississippi Community College. I'm looking to grow with a company where I can keep building real-world skills and make a genuine impact.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="timeline">
+    <section id="experience-education">
+        <div class="two-col-grid">
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">06/2026 - Present</span>
-                    <h3>C Spire | Customer Applications Intern</h3>
-                    <span class="timeline-location">Ridgeland, MS</span>
-                    <p>Salesforce administration and development. Created "Health Check" LWCs for objects to increase incident resolution speeds.</p>
+            <div id="experience" class="two-col-item">
+                <h2>Experience</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">06/2026 - Present</span>
+                            <h3>EdgeTheory | Software Engineer Intern</h3>
+                            <span class="timeline-location">Oxford, MS (Remote)</span>
+                            <p>Used a Ruby API to create an endpoint for automating meeting session schedules, streamlining intern timesheets.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">06/2026 - 08/2026</span>
+                            <h3>C Spire | Customer Applications Intern</h3>
+                            <span class="timeline-location">Ridgeland, MS</span>
+                            <p>Salesforce administration and development. Created "Health Check" LWCs for objects to increase incident creation and resolution speeds.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">12/2023 - 05/2026</span>
+                            <h3>Zaxby's | Shift Leader / Cashier</h3>
+                            <span class="timeline-location">Pontotoc, MS</span>
+                            <p>Grew my position from entry-level cashier to shift leader within 18 months. As a shift leader, I managed high-pressure environments and coordinated team tasks to ensure efficient service delivery.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">06/2026 - Present</span>
-                    <h3>EdgeTheory | Software Engineer Intern</h3>
-                    <span class="timeline-location">Oxford, MS (Remote)</span>
-                </div>
-            </div>
+            <div id="education" class="two-col-item">
+                <h2>Education</h2>
+                <div class="timeline">
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">12/2023 - 05/2026</span>
-                    <h3>Zaxby's | Shift Leader / Cashier</h3>
-                    <span class="timeline-location">Pontotoc, MS</span>
-                    <p>Grew my position from entry-level cashier to shift leader within 18 months. As a shift leader, I managed high-pressure environments and coordinated team tasks to ensure efficient service delivery.</p>
-                </div>
-            </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">12/2026</span>
+                            <h3>Northwest Mississippi Community College | AAS in Coding Technology</h3>
+                            <span class="timeline-location">Senatobia, MS (Online)</span>
+                            <ul>
+                                <li>4.0 GPA</li>
+                                <li>Phi Theta Kappa</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        </div>
-    </section>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">05/2026</span>
+                            <h3>Base Camp Coding Academy | Software Development Certificate</h3>
+                            <span class="timeline-location">Water Valley, MS</span>
+                            <ul>
+                                <li>Full scholarship</li>
+                                <li>Year-long software development program covering 9 different languages and frameworks, plus professional development and career strategy</li>
+                                <li>Management Leadership Team &mdash; supervised facility maintenance</li>
+                                <li>Procurement Leadership Team &mdash; helped manage a small budget for a non-profit</li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">05/2025</span>
+                            <h3>Pontotoc City High School | High School Diploma</h3>
+                            <span class="timeline-location">Pontotoc, MS</span>
+                            <ul>
+                                <li>Section leader in the All Superior PHS Marching Band</li>
+                                <li>Graduated with Distinguished Honors; member of MU Alpha Theta, Chess Club, and Science Bowl</li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">12/2026</span>
-                    <h3>Northwest Mississippi Community College | AAS in Coding Technology</h3>
-                    <span class="timeline-location">Senatobia, MS (Online)</span>
-                    <ul>
-                        <li>4.0 GPA</li>
-                        <li>Phi Theta Kappa</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">05/2026</span>
-                    <h3>Base Camp Coding Academy | Software Development Certificate</h3>
-                    <span class="timeline-location">Water Valley, MS</span>
-                    <ul>
-                        <li>Full scholarship</li>
-                        <li>Year-long software development program covering 9 different languages and frameworks, plus professional development and career strategy</li>
-                        <li>Management Leadership Team &mdash; supervised facility maintenance</li>
-                        <li>Procurement Leadership Team &mdash; helped manage a small budget for a non-profit</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">05/2025</span>
-                    <h3>Pontotoc City High School | High School Diploma</h3>
-                    <span class="timeline-location">Pontotoc, MS</span>
-                    <ul>
-                        <li>Section leader in the All Superior PHS Marching Band</li>
-                        <li>Graduated with Distinguished Honors; member of MU Alpha Theta, Chess Club, and Science Bowl</li>
-                    </ul>
                 </div>
             </div>
 
@@ -118,80 +165,25 @@
 
     <section id="projects">
         <h2>Projects</h2>
+        <p class="projects-note">Click a card to expand or collapse it.</p>
+
+        <div class="project-columns">
+
+        <div class="project-column">
+        <h3 class="project-subheading">Completed</h3>
         <div class="project-grid">
 
             <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
-                        <h3>Concession Stand Manager</h3>
-                    </div>
-
-                    <div class="project-badges">
-                        <span class="org-badge">Personal</span>
-                        <span class="status-badge">Currently Working On</span>
-                    </div>
-
-                    <p>
-                        An app using React Native and Django REST Framework to manage concession
-                        stand sales, inventory, payments, scheduling, and more. Ease of use is
-                        the top priority, since it will be used by volunteers. Inspired by personal 
-                        experience in concession stands at Pontotoc High School.
-                    </p>
-
-                    <div class="project-tags">
-                        <span class="tag-small">React Native</span>
-                        <span class="tag-small">Django REST Framework</span>
-                        <span class="tag-small">Python</span>
-                        <span class="tag-small">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <div class="project-header">
-                        <h3>Salesforce Incident Toolkit</h3>
-                    </div>
-
-                    <div class="project-badges">
-                        <span class="org-badge">C Spire</span>
-                        <span class="status-badge">Currently Working On</span>
-                    </div>
-
-                    <p>
-                        Building at C Spire — a toolkit that includes LWC Health Checks for default and
-                        custom Salesforce objects, plus an AI-powered Incident Detective. It takes
-                        incident information, searches the Salesforce org for related context, and
-                        uses Claude to identify the root cause and recommend a solution.
-                    </p>
-
-                    <div class="project-tags">
-                        <span class="tag-small">Salesforce</span>
-                        <span class="tag-small">Apex</span>
-                        <span class="tag-small">LWC</span>
-                        <span class="tag-small">Claude</span>
-                        <span class="tag-small">Prompt Engineering</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <div class="project-header">
+                        <img src="lafayette-logo.png" alt="Lafayette County Historical &amp; Genealogical Society Logo" class="project-logo">
                         <h3>Lafayette County Historical &amp; Genealogical Society Website Rebuild</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
                     </div>
 
                     <div class="project-badges">
                         <span class="org-badge">Base Camp Coding Academy</span>
                     </div>
-
-                    <p>
-                        Capstone project at Base Camp Coding Academy, built with Kaden Norlander and
-                        Angelina Tzib. We rebuilt the Lafayette County Historical &amp; Genealogical
-                        Society's website using a decoupled architecture — a Django REST Framework
-                        backend paired with a React.js frontend — and designed the database schema
-                        to support easy updates and quick searches.
-                    </p>
 
                     <div class="project-tags">
                         <span class="tag-small">Python</span>
@@ -201,8 +193,18 @@
                         <span class="tag-small">CSS</span>
                     </div>
 
-                    <div class="btn-group">
-                        <a href="https://lafayettegenealogy.org/" class="btn btn-secondary" target="_blank">View Live</a>
+                    <div class="project-details">
+                        <p>
+                            Capstone project at Base Camp Coding Academy, built with Kaden Norlander and
+                            Angelina Tzib. We rebuilt the Lafayette County Historical &amp; Genealogical
+                            Society's website using a decoupled architecture — a Django REST Framework
+                            backend paired with a React.js frontend — and designed the database schema
+                            to support easy updates and quick searches.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="https://lafayettegenealogy.org/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -212,17 +214,12 @@
                     <div class="project-header">
                         <img src="nyxcam.png" alt="NyxCam Logo" class="project-logo">
                         <h3>NyxCam</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
                     </div>
 
                     <div class="project-badges">
                         <span class="org-badge">Base Camp Coding Academy</span>
                     </div>
-
-                    <p>
-                        NyxCam is a project developed by Bryson Flowers, Lemuel Tzib, and myself.
-                        We created a video-chat app for playing charades. Users can create rooms
-                        for friends to join, and play with special gamemodes for a twist!
-                    </p>
 
                     <div class="project-tags">
                         <span class="tag-small">Python</span>
@@ -231,9 +228,17 @@
                         <span class="tag-small">JavaScript</span>
                     </div>
 
-                    <div class="btn-group">
-                        <a href="https://github.com/jtutor26/video_chat" class="btn" target="_blank">View Code</a>
-                        <!-- <a href="#" class="btn btn-secondary" target="_blank">View Live</a> -->
+                    <div class="project-details">
+                        <p>
+                            NyxCam is a project developed by Bryson Flowers, Lemuel Tzib, and myself.
+                            We created a video-chat app for playing charades. Users can create rooms
+                            for friends to join, and play with special gamemodes for a twist!
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="https://github.com/jtutor26/video_chat" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <!-- <a href="#" class="btn btn-secondary" target="_blank">View Live</a> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,28 +248,192 @@
                     <div class="project-header">
                         <img src="cookit.png" alt="Cook-It Logo" class="project-logo">
                         <h3>Cook-It!</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
                     </div>
 
                     <div class="project-badges">
                         <span class="org-badge">Base Camp Coding Academy</span>
                     </div>
 
-                    <p>Cook-It! was developed by Lemuel Tzib, Angel Salazar, and myself. We
-                        created a digital recipe sharing platform. Users can upload their own
-                        recipes for others to view and comment.
-                    </p>
-
                     <div class="project-tags">
                         <span class="tag-small">Django</span>
                         <span class="tag-small">HTML/CSS</span>
                     </div>
 
-                    <div class="btn-group">
-                        <a href="https://github.com/jtutor26/cook-it" class="btn" target="_blank">View Code</a>
-                        <!-- <a href="#" class="btn btn-secondary" target="_blank">View Live</a> -->
+                    <div class="project-details">
+                        <p>Cook-It! was developed by Lemuel Tzib, Angel Salazar, and myself. We
+                            created a digital recipe sharing platform. Users can upload their own
+                            recipes for others to view and comment.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="https://github.com/jtutor26/cook-it" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <!-- <a href="#" class="btn btn-secondary" target="_blank">View Live</a> -->
+                        </div>
                     </div>
                 </div>
             </div>
+
+        </div>
+        </div>
+
+        <div class="project-column">
+        <h3 class="project-subheading">In Development</h3>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>MetalCraft</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+                    </div>
+
+                    <div class="project-badges">
+                        <span class="org-badge">Personal</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag-small">Swift</span>
+                        <span class="tag-small">C#</span>
+                        <span class="tag-small">Unity</span>
+                        <span class="tag-small">Fabric</span>
+                        <span class="tag-small">Network.framework</span>
+                    </div>
+
+                    <div class="project-details">
+                        <p>
+                            A prototype for streaming Minecraft into VR on a Meta Quest headset. A
+                            Mac-hosted Fabric mod will render stereo eye views and hardware-encode
+                            them, streaming over a wired USB link to a Unity client on the headset
+                            that tracks head movement and sends pose data back. Currently working
+                            through the transport pipeline in phases &mdash; a Swift socket server and
+                            Unity ping client clocked a ~2&ndash;4ms wired round trip as the first
+                            milestone.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="https://github.com/jtutor26/MetalCraft" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>Kana Practice</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+                    </div>
+
+                    <div class="project-badges">
+                        <span class="org-badge">Personal</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag-small">TypeScript</span>
+                        <span class="tag-small">React</span>
+                        <span class="tag-small">Electron</span>
+                        <span class="tag-small">Tailwind CSS</span>
+                    </div>
+
+                    <div class="project-details">
+                        <p>
+                            A desktop quiz app for memorizing the Japanese kana syllabary (hiragana
+                            and katakana). Covers all 208 kana across basic, dakuten, handakuten,
+                            and combo groups, tracks per-character accuracy across your last 5
+                            attempts, and accepts common romanization variants when checking answers.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="https://github.com/jtutor26/kana-app" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>Chess Engine</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+                    </div>
+
+                    <div class="project-badges">
+                        <span class="org-badge">Personal</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <span class="tag-small">Python</span>
+                        <span class="tag-small">Pygame</span>
+                    </div>
+
+                    <div class="project-details">
+                        <p>
+                            Building a chess engine from scratch in Python using Pygame for the
+                            board and piece rendering. Currently focused on getting the board state
+                            and GUI right before implementing move validation and game logic.
+                        </p>
+
+                        <div class="btn-group">
+                            <a href="https://github.com/jtutor26/chessEngine" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="project-column">
+        <h3 class="project-subheading">Planned</h3>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>Open Source Budgeting App</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+                    </div>
+
+                    <div class="project-badges">
+                        <span class="org-badge">Personal</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <!-- TODO(JT): add tech stack tags, e.g. <span class="tag-small">Python</span> -->
+                    </div>
+
+                    <div class="project-details">
+                        <!-- TODO(JT): replace with a real description -->
+                        <p class="placeholder-text">Description coming soon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>FromSoftware Build Optimizer</h3>
+                        <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+                    </div>
+
+                    <div class="project-badges">
+                        <span class="org-badge">Personal</span>
+                    </div>
+
+                    <div class="project-tags">
+                        <!-- TODO(JT): add tech stack tags, e.g. <span class="tag-small">Python</span> -->
+                    </div>
+
+                    <div class="project-details">
+                        <!-- TODO(JT): replace with a real description -->
+                        <p class="placeholder-text">Description coming soon.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
 
         </div>
     </section>
@@ -272,28 +441,61 @@
     <section id="skills">
         <h2>Skills</h2>
 
-        <h3 class="skills-subheading">Technical Skills</h3>
-        <div class="skills-container">
-            <span class="skill-tag">Full Stack Development</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">Spring Boot 4</span>
-            <span class="skill-tag">Django</span>
-            <span class="skill-tag">HTML/CSS</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">Salesforce</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">GitHub</span>
-            <span class="skill-tag">Prompt Engineering</span>
-        </div>
+        <div class="skills-grid">
 
-        <h3 class="skills-subheading">Soft Skills</h3>
-        <div class="skills-container">
-            <span class="skill-tag skill-tag-soft">Leadership</span>
-            <span class="skill-tag skill-tag-soft">Communication</span>
-            <span class="skill-tag skill-tag-soft">Computer Literacy</span>
+            <div class="skills-category">
+                <h3 class="skills-subheading">Languages</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-subheading">Frameworks &amp; Libraries</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Spring Boot 4</span>
+                    <span class="skill-tag">Django</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-subheading">Databases &amp; Platforms</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Salesforce</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-subheading">Tools</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-subheading">Concepts</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Full Stack Development</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-subheading">Soft Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag skill-tag-soft">Leadership</span>
+                    <span class="skill-tag skill-tag-soft">Communication</span>
+                    <span class="skill-tag skill-tag-soft">Computer Literacy</span>
+                </div>
+            </div>
+
         </div>
 
         <br>
@@ -305,19 +507,23 @@
             <li><strong>AI Capabilities and Limitations</strong> - Anthropic - July 2026</li>
             <li><strong>Claude Code 101</strong> - Anthropic - July 2026</li>
         </ul>
-        <p class="certifications-note">Certificate images and links available on my <a href="https://www.linkedin.com/in/jonathan-tutor-4729b4368/" target="_blank">LinkedIn</a>.</p>
+        <p class="certifications-note">Certificate images and links available on my <a href="https://www.linkedin.com/in/jonathan-tutor-4729b4368/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
     </section>
+
+    </main>
 
     <footer>
         <p>Contact Me</p>
         <div class="footer-links">
-            <a href="mailto:jttutor10@gmail.com" target="_blank">Email</a>
-            <a href="https://github.com/jtutor26" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/jonathan-tutor-4729b4368/" target="_blank">LinkedIn</a>
-            <a href="resume.pdf" target="_blank">Resume (PDF)</a>
+            <a href="mailto:jttutor10@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+            <a href="https://github.com/jtutor26" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/jonathan-tutor-4729b4368/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
         </div>
         <br>
     </footer>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">&#8593;</button>
 
     <script src="script.js"></script>
 </body>
